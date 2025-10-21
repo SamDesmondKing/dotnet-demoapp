@@ -1,17 +1,20 @@
 ﻿@page "{action?}/{value?}"
-@model ToolsModel
+
 @{
-  ViewData["Title"] = "Tools";
+  Layout = "_Layout";
 }
 
 <div class="card shadow-lg">
   <div class="card-header h3 bg-info text-white"> <i class="fas fa-fw fa-tools"></i> Tools</div>
 
-  @if (Model.Message.Length > 0)
+  @{
+    var message = TempData["Message"] as string ?? "";
+  }
+  @if (!string.IsNullOrEmpty(message))
   {
     <div class="alert alert-primary alert-dismissible text-dark m-2" role="alert" data-bs-dismiss="alert"
     aria-label="Close">
-      <h4>@Model.Message</h4>
+      <h4>@message</h4>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
   }
