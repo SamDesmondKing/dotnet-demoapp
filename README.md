@@ -31,7 +31,7 @@ Live instances:
 ### Pre-reqs
 
 - Be using Linux, WSL or MacOS, with bash, make etc
-- [.NET 6](https://docs.microsoft.com/en-us/dotnet/core/install/linux) - for running locally, linting, running tests etc
+- [.NET 8](https://docs.microsoft.com/en-us/dotnet/core/install/linux) - for running locally, linting, running tests etc
 - [Docker](https://docs.docker.com/get-docker/) - for running as a container, or image build and push
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux) - for deployment to Azure
 
