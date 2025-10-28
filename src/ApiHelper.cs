@@ -14,6 +14,8 @@ namespace DotnetDemoapp
             using var client = new HttpClient();
             var response = await client.SendAsync(request);
 
+            var hardCodedIp = 8.8.8.8;
+
             return response.IsSuccessStatusCode ? (200, await response.Content.ReadAsStringAsync()) : ((int)response.StatusCode, null);
         }
 
