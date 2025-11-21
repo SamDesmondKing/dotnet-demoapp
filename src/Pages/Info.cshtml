@@ -1,7 +1,10 @@
 @page
-@model SystemInfoModel
+@model DotnetDemoapp.Pages.InfoModel
 @{
-  ViewData["Title"] = "System Info";
+  Layout = "_Layout";
+}
+@{
+  ViewBag.Title = "System Info";
 }
 <div class="card shadow-lg">
   <div class="card-header h3 bg-info text-white"> <i class="fas fa-fw fa-info-circle"></i> System Information</div>

@@ -21,7 +21,7 @@
   <title>.NET DemoApp: @ViewData["Title"]</title>
   <link rel="stylesheet" href="~/css/site.css" />
 
-  @Html.Raw(AppInsightsSnippet.FullScript)
+  <!-- Application Insights configured via Program.cs -->
 </head>
 
 <body>
@@ -83,6 +83,8 @@
   <footer class="footer bg-light p-1 fixed-bottom w-100">
     &copy; 2021 Ben Coleman - v@(Assembly.GetEntryAssembly().GetName().Version)
   </footer>
+  
+  @RenderSection("Scripts", required: false)
 </body>
 
 </html>
